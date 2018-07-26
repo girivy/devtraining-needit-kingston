@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <active>false</active>
+        <api_name>x_58872_needit.MyFirstScriptInclude</api_name>
+        <client_callable>true</client_callable>
+        <description>MyFirstScriptInclude</description>
+        <name>MyFirstScriptInclude</name>
+        <script><![CDATA[var MyFirstScriptInclude = Class.create();
+MyFirstScriptInclude.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+	    helloworld: function() {
+		var obj = {};
+		obj.var1 = 'Hello';
+		obj.var2 = 'World';
+		
+		var json = new JSON();
+		var data = json.encode(obj);//JSON formatted string
+		return data;
+    },
+
+    type: 'MyFirstScriptInclude'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2018-07-24 14:12:54</sys_created_on>
+        <sys_id>4f90b9744fe313000698045e9310c7c0</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>MyFirstScriptInclude</sys_name>
+        <sys_package display_value="NeedIt" source="x_58872_needit">6ead8e780f603200cd674f8ce1050ed1</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="NeedIt">6ead8e780f603200cd674f8ce1050ed1</sys_scope>
+        <sys_update_name>sys_script_include_4f90b9744fe313000698045e9310c7c0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2018-07-25 12:50:13</sys_updated_on>
+    </sys_script_include>
+</record_update>
